@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  background-size: 100%;
+}
+
+.hero {
+  background-image: url("../images/mobile/image-header.jpg");
+  background-size: contain;
+  height: 30rem;
+  width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}

@@ -17,6 +17,12 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
+body h1,
+body h2,
+body h4 {
+  font-family: "Fraunces", serif;
+}
+
 .hero {
   background-image: url("/images/mobile/image-header.jpg");
   background-size: contain;
@@ -38,7 +44,6 @@ body {
 .hero .hero-text h1 {
   font-size: 2.25rem;
   text-transform: uppercase;
-  font-family: "Fraunces", serif;
   line-height: 2.25rem;
   letter-spacing: 0.4rem;
 }
@@ -99,7 +104,6 @@ body {
 
 .transform-brand h2,
 .stand-out h2 {
-  font-family: "Fraunces", serif;
   font-size: 1.75rem;
   color: #23303e;
   font-weight: 900;
@@ -128,10 +132,9 @@ body {
   width: 110%;
   height: 0.5rem;
   border-radius: 0.5rem;
-  background-color: #fad400;
   position: absolute;
-  right: -2.5%;
-  bottom: -5%;
+  right: -3.5%;
+  bottom: -17%;
   z-index: -1;
 }
 
@@ -141,11 +144,120 @@ body {
   width: 110%;
   height: 0.5rem;
   border-radius: 0.5rem;
-  background-color: rgba(250, 212, 0, 0.204);
   position: absolute;
-  right: -2.5%;
-  bottom: -5%;
+  right: -3.5%;
+  bottom: -17%;
   z-index: -1;
+}
+
+.transform-brand a:after {
+  background-color: rgba(250, 212, 0, 0.204);
+}
+
+.transform-brand a:hover::after {
+  background-color: #fad400;
+}
+
+.stand-out a:after {
+  background-color: rgba(254, 121, 103, 0.294);
+}
+
+.stand-out a:hover::after {
+  background-color: #fe7867;
+}
+
+.cherry,
+.orange {
+  position: relative;
+}
+
+.cherry .graphic-design,
+.cherry .photography,
+.orange .graphic-design,
+.orange .photography {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: -12%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #25564b;
+  padding: 1.15rem;
+}
+
+.cherry .graphic-design h2,
+.cherry .photography h2,
+.orange .graphic-design h2,
+.orange .photography h2 {
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+
+.cherry .graphic-design p,
+.cherry .photography p,
+.orange .graphic-design p,
+.orange .photography p {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.testimonials {
+  padding: 1rem;
+}
+
+.testimonials .container {
+  margin: 2.5rem 0;
+  padding: 0 0.25rem;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin: 2.5rem 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.25rem;
+  color: #a7abae;
+}
+
+.testimonials .testimonial {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.testimonials .testimonial img {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.testimonials .testimonial p {
+  margin: 2rem 0;
+  color: #818498;
+  line-height: 1.75rem;
+}
+
+.testimonials .testimonial h4 {
+  font-size: 1rem;
+}
+
+.testimonials .testimonial h6 {
+  color: #a7abae;
+  font-size: 0.75rem;
+}
+
+.gallery {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.gallery img {
+  width: 100%;
 }
 
 .attribution {

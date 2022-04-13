@@ -246,6 +246,68 @@ body h4 {
   font-size: 0.75rem;
 }
 
+.logo {
+  -webkit-filter: brightness(0) saturate(100%) invert(38%) sepia(8%) saturate(2697%) hue-rotate(116deg) brightness(90%) contrast(81%);
+          filter: brightness(0) saturate(100%) invert(38%) sepia(8%) saturate(2697%) hue-rotate(116deg) brightness(90%) contrast(81%);
+  text-align: center;
+  padding: 3.5rem 0 0 0;
+}
+
+.logo img {
+  width: 9.5rem;
+}
+
+.footer {
+  background-color: #99d9c9;
+  color: #25564b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2rem 0.5rem;
+}
+
+.footer .links div {
+  color: #458c7e;
+  cursor: pointer;
+}
+
+.footer .links div:hover {
+  color: #fff;
+}
+
+.footer .social-medias {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3rem 0;
+  cursor: pointer;
+}
+
+.footer .social-medias img:hover {
+  -webkit-filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(0%) hue-rotate(284deg) brightness(104%) contrast(100%);
+          filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(0%) hue-rotate(284deg) brightness(104%) contrast(100%);
+}
+
 .gallery {
   width: 100%;
   display: -ms-grid;

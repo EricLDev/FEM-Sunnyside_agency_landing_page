@@ -238,6 +238,52 @@ body {
 	}
 }
 
+.logo {
+	filter: brightness(0) saturate(100%) invert(38%) sepia(8%) saturate(2697%) hue-rotate(116deg) brightness(90%) contrast(81%);
+	text-align: center;
+	padding: 3.5rem 0 0 0;
+
+	img {
+		width: 9.5rem;
+	}
+}
+
+.footer {
+	background-color: #99d9c9;
+	color: #25564b;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.links {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		padding: 2rem 0.5rem;
+
+		div {
+			color: hsl(168, 34%, 41%);
+			cursor: pointer;
+		}
+
+		div:hover {
+			color: #fff;
+		}
+	}
+
+	.social-medias {
+		width: 45%;
+		display: flex;
+		justify-content: space-between;
+		margin: 3rem 0;
+		cursor: pointer;
+
+		img:hover {
+			filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(0%) hue-rotate(284deg) brightness(104%) contrast(100%);
+		}
+	}
+}
+
 .gallery {
 	width: 100%;
 	display: grid;

@@ -27,7 +27,7 @@ body {
 }
 
 .hero {
-	background-image: url("/images/mobile/image-header.jpg");
+	background-image: url("./images/mobile/image-header.jpg");
 	background-size: contain;
 	height: 29.9rem;
 	width: 100%;
@@ -378,7 +378,7 @@ body {
 		.egg {
 			grid-column: 2/3;
 			img {
-				content: url(/images/desktop/image-transform.jpg);
+				content: url(./images/desktop/image-transform.jpg);
 			}
 		}
 
@@ -418,19 +418,19 @@ body {
 		}
 		.pink-cup {
 			img {
-				content: url(/images/desktop/image-stand-out.jpg);
+				content: url(./images/desktop/image-stand-out.jpg);
 			}
 		}
 
 		.cherry {
 			img {
-				content: url(/images/desktop/image-graphic-design.jpg);
+				content: url(./images/desktop/image-graphic-design.jpg);
 			}
 		}
 
 		.orange {
 			img {
-				content: url(/images/desktop/image-photography.jpg);
+				content: url(./images/desktop/image-photography.jpg);
 			}
 		}
 	}
@@ -463,19 +463,19 @@ body {
 		display: flex;
 
 		#gallery-milk {
-			content: url(/images/desktop/image-gallery-milkbottles.jpg);
+			content: url(./images/desktop/image-gallery-milkbottles.jpg);
 		}
 
 		#gallery-orange {
-			content: url(/images/desktop/image-gallery-orange.jpg);
+			content: url(./images/desktop/image-gallery-orange.jpg);
 		}
 
 		#gallery-cone {
-			content: url(/images/desktop/image-gallery-cone.jpg);
+			content: url(./images/desktop/image-gallery-cone.jpg);
 		}
 
 		#gallery-sugar {
-			content: url(/images/desktop/image-gallery-sugarcubes.jpg);
+			content: url(./images/desktop/image-gallery-sugarcubes.jpg);
 		}
 	}
 

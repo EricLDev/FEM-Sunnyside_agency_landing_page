@@ -24,7 +24,7 @@ body h4 {
 }
 
 .hero {
-  background-image: url("/images/mobile/image-header.jpg");
+  background-image: url("./images/mobile/image-header.jpg");
   background-size: contain;
   height: 29.9rem;
   width: 100%;
@@ -413,7 +413,7 @@ body h4 {
     grid-column: 2/3;
   }
   .wrapper .egg img {
-    content: url(/images/desktop/image-transform.jpg);
+    content: url(./images/desktop/image-transform.jpg);
   }
   .wrapper .transform-brand,
   .wrapper .stand-out {
@@ -450,13 +450,13 @@ body h4 {
     font-size: 1.5rem;
   }
   .wrapper .pink-cup img {
-    content: url(/images/desktop/image-stand-out.jpg);
+    content: url(./images/desktop/image-stand-out.jpg);
   }
   .wrapper .cherry img {
-    content: url(/images/desktop/image-graphic-design.jpg);
+    content: url(./images/desktop/image-graphic-design.jpg);
   }
   .wrapper .orange img {
-    content: url(/images/desktop/image-photography.jpg);
+    content: url(./images/desktop/image-photography.jpg);
   }
   .testimonials {
     padding: 8.5rem;
@@ -486,16 +486,16 @@ body h4 {
     display: flex;
   }
   .gallery #gallery-milk {
-    content: url(/images/desktop/image-gallery-milkbottles.jpg);
+    content: url(./images/desktop/image-gallery-milkbottles.jpg);
   }
   .gallery #gallery-orange {
-    content: url(/images/desktop/image-gallery-orange.jpg);
+    content: url(./images/desktop/image-gallery-orange.jpg);
   }
   .gallery #gallery-cone {
-    content: url(/images/desktop/image-gallery-cone.jpg);
+    content: url(./images/desktop/image-gallery-cone.jpg);
   }
   .gallery #gallery-sugar {
-    content: url(/images/desktop/image-gallery-sugarcubes.jpg);
+    content: url(./images/desktop/image-gallery-sugarcubes.jpg);
   }
   .footer .links {
     width: 25%;

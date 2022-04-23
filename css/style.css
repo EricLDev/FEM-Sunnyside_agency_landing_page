@@ -415,10 +415,39 @@ body h4 {
   .wrapper .egg img {
     content: url(/images/desktop/image-transform.jpg);
   }
+  .wrapper .transform-brand,
+  .wrapper .stand-out {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: left;
+  }
+  .wrapper .transform-brand h2,
+  .wrapper .stand-out h2 {
+    font-size: 2.25rem;
+  }
   .wrapper .transform-brand {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
+    padding-left: 8rem;
+    padding-right: 6rem;
+  }
+  .wrapper .stand-out {
+    padding-right: 8rem;
+    padding-left: 6rem;
+  }
+  .wrapper .cherry div,
+  .wrapper .orange div {
+    width: 50%;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .wrapper .cherry div h2,
+  .wrapper .orange div h2 {
+    font-size: 1.5rem;
   }
   .wrapper .pink-cup img {
     content: url(/images/desktop/image-stand-out.jpg);
@@ -429,10 +458,27 @@ body h4 {
   .wrapper .orange img {
     content: url(/images/desktop/image-photography.jpg);
   }
+  .testimonials {
+    padding: 8.5rem;
+  }
+  .testimonials h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
   .testimonials .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .testimonials .container .testimonial {
+    padding: 0 0.75rem;
+    margin-bottom: 0;
+  }
+  .testimonials .container .testimonial p {
+    margin: 4rem 0;
   }
   .gallery {
     display: -webkit-box;
@@ -450,5 +496,17 @@ body h4 {
   }
   .gallery #gallery-sugar {
     content: url(/images/desktop/image-gallery-sugarcubes.jpg);
+  }
+  .footer .links {
+    width: 25%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .social-medias {
+    width: inherit;
+  }
+  .footer .social-medias img {
+    margin: 0 0.75rem;
   }
 }

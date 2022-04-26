@@ -1,6 +1,6 @@
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/time-tracking-component-using-reactfetch-jsonroutergridflexbox-HJlAq-Mm9]
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-using-grid-and-flexbox-SyvxrqrS5]
 - Live Site URL: [https://ericl81.github.io/FEM-Sunnyside_agency_landing_page/]
 
 # Frontend Mentor - Sunnyside agency landing page

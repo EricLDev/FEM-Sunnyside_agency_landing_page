@@ -25,8 +25,10 @@ body h4 {
 
 .hero {
   background-image: url("../images/mobile/image-header.jpg");
-  background-size: contain;
-  height: 29.9rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   width: 100%;
   position: relative;
 }
@@ -98,8 +100,17 @@ body h4 {
 
 .transform-brand,
 .stand-out {
-  padding: 3.5rem 1.5rem;
   text-align: center;
+  max-width: 85%;
+  padding: 3.5rem 0;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .transform-brand,
+  .stand-out {
+    max-width: 65%;
+  }
 }
 
 .transform-brand h2,
@@ -172,18 +183,29 @@ body h4 {
 }
 
 .cherry .graphic-design,
-.cherry .photography,
-.orange .graphic-design,
 .orange .photography {
   width: 100%;
   text-align: center;
   position: absolute;
-  bottom: -12%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  bottom: 0;
+  transform: translateX(-50%);
   color: #25564b;
-  padding: 1.15rem;
+  padding-inline: 1.15rem;
+}
+
+@media (min-width: 768px) {
+  .cherry .graphic-design,
+  .orange .photography {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cherry .graphic-design,
+  .orange .photography {
+    width: 50%;
+  }
 }
 
 .cherry .graphic-design h2,
@@ -310,16 +332,18 @@ body h4 {
 
 .gallery {
   width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .gallery img {
-  width: 100%;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .gallery img {
+    width: 25%;
+  }
 }
 
 .attribution {
@@ -334,10 +358,6 @@ body h4 {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url("../images/desktop/image-header.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
   }
   .hero .navbar-brand img {
     width: 9rem;
@@ -354,64 +374,7 @@ body h4 {
     font-size: 3rem;
     margin-bottom: 3rem;
   }
-  #navbarNav {
-    background-color: #3ebfff;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  #navbarNav ul {
-    width: 40%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #navbarNav:after {
-    display: none;
-  }
-  #navbarNav .nav-item:nth-of-type(2) {
-    margin: 0;
-  }
-  #navbarNav .nav-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #navbarNav .nav-item a {
-    color: #fff;
-  }
-  #navbarNav .nav-item button {
-    margin: 0;
-    background-color: #fff;
-    font-size: 0.75rem;
-    padding: 0.5rem 1.25rem;
-  }
-  .wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-  .wrapper .egg {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-  }
+
   .wrapper .egg img {
     content: url(../images/desktop/image-transform.jpg);
   }
@@ -428,23 +391,7 @@ body h4 {
   .wrapper .stand-out h2 {
     font-size: 2.25rem;
   }
-  .wrapper .transform-brand {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    padding-left: 8rem;
-    padding-right: 6rem;
-  }
-  .wrapper .stand-out {
-    padding-right: 8rem;
-    padding-left: 6rem;
-  }
-  .wrapper .cherry div,
-  .wrapper .orange div {
-    width: 50%;
-    padding: 0;
-    margin-bottom: 2rem;
-  }
+
   .wrapper .cherry div h2,
   .wrapper .orange div h2 {
     font-size: 1.5rem;
@@ -459,7 +406,7 @@ body h4 {
     content: url(../images/desktop/image-photography.jpg);
   }
   .testimonials {
-    padding: 8.5rem;
+    padding-block: 8.5rem;
   }
   .testimonials h2 {
     font-size: 1.1rem;
@@ -508,5 +455,59 @@ body h4 {
   }
   .footer .social-medias img {
     margin: 0 0.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #navbarNav {
+    background-color: #3ebfff;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  #navbarNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #navbarNav:after {
+    display: none;
+  }
+  #navbarNav .nav-item:nth-of-type(2) {
+    margin: 0;
+  }
+  #navbarNav .nav-item {
+    padding-inline: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #navbarNav .nav-item a {
+    color: #fff;
+  }
+  #navbarNav .nav-item button {
+    margin: 0;
+    background-color: #fff;
+    font-size: 0.75rem;
+    padding: 0.5rem 1.25rem;
+  }
+
+  .transform-brand, .stand-out {
+    padding: 0;
   }
 }

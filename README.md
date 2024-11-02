@@ -1,7 +1,7 @@
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-using-grid-and-flexbox-SyvxrqrS5]
-- Live Site URL: [https://ericl81.github.io/FEM-Sunnyside_agency_landing_page/]
+- Live Site URL: [https://ericldev.github.io/FEM-Sunnyside_agency_landing_page/]
 
 # Frontend Mentor - Sunnyside agency landing page
 
